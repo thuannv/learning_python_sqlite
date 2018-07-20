@@ -60,7 +60,7 @@ def print_table_records(connection, table_name):
         for r in rows:
             print("%-20s | %20s" %(r[0], r[1]))
     except Error as e:
-        print("* print table {0} error {1}".format(table_name, e))
+        print("* Print records of table \"{0}\", ERROR: \"{1}\"".format(table_name, e))
     print("\n")
 
 def main():
